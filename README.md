@@ -18,7 +18,7 @@
 #static 静态资源目录 ，如图片、字体等
 #test 初始的测试目录 可以删除
 #.xxxx文件  这是一些配置文件，包括语法配置，git配置等
-#index.html 首页入口文件，你可以添加一些meta信息或统计代码啥的
+#index.html 首页入口文件
 #package.json 项目配置文件
 #README.md   项目说明文档 markdown 模式
 
