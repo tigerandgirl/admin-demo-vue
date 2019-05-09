@@ -1,0 +1,23 @@
+export const ndt = {
+    /* 待办任务页面 */
+    need_deal_task: '待办任务',
+    task_des: "任务描述",
+    advance_search: '高级搜索',
+    return: '返回',
+    procedure_name: '流程名',
+    applicate_man: '申请人',
+    applicate_time: '申请时间',
+    begin_time: '开始日期',
+    end_time: '结束日期',
+    query: '查询',
+    reset: '重置',
+    originator: '发起人',
+    launch_time: '发起时间',
+    deal_man: '处理人(上步)',
+    deal_time: '处理时间(上步)',
+    deal_des: '处理意见',
+    operate:'操作',
+    to: '至',
+    delete:'删除',
+    modify:'编辑',
+}

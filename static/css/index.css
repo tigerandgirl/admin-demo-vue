@@ -1,0 +1,801 @@
+/*  index.css 2019-02-27  */
+
+
+
+.el-input__suffix,.el-tree.is-dragging .el-tree-node__content * {
+	pointer-events: none
+}
+
+.el-pagination--small .arrow.disabled,.el-table .hidden-columns,.el-table td.is-hidden>*,.el-table th.is-hidden>*,.el-table--hidden {
+	visibility: hidden
+}
+
+.el-dropdown .el-dropdown-selfdefine:focus:active,.el-dropdown .el-dropdown-selfdefine:focus:not(.focusing),.el-message__closeBtn:focus,.el-message__content:focus,.el-popover:focus,.el-popover:focus:active,.el-popover__reference:focus:hover,.el-popover__reference:focus:not(.focusing),.el-rate:active,.el-rate:focus,.el-tooltip:focus:hover,.el-tooltip:focus:not(.focusing),.el-upload-list__item.is-success:active,.el-upload-list__item.is-success:not(.focusing):focus {
+	outline-width: 0
+}
+
+
+/*添加的*/
+/* add ruanyang  2019-02-26  文本框 focus */
+.el-input__inner:focus{
+	border-color:#004a86;
+	color:#000;
+	outline:0;
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.el-textarea__inner:focus{
+	border-color:#004a86;
+	color:#000;
+	outline:0;
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.el-range-editor.is-active, .el-range-editor.is-active:hover{
+  border-color:#004a86;
+  color:#000;
+  outline:0;
+  box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+  /*针对button 样式为 text的 删除按钮hover*/
+.el-button-del:hover{
+	color:#ed6c00;
+}
+
+/**
+    pxmwwij 2019-02-26
+    鼠标一上去按钮变色样式
+ */
+
+/*默认样式*/
+.btn-add:hover,
+.el-button--default:hover{
+    color: #fff;
+    background-color: #00335d;
+    border-color: #004a86;
+}
+
+/*cuc首选项样式*/
+.btn-primary:hover {
+    color: #fff;
+    background-color: #005083;
+    border-color: #0069ac;
+}
+
+/*cuc次选项样式*/
+.btn-second:hover {
+    color: #333;
+    background-color: #ebebeb;
+    border-color: #dddddd;
+}
+
+.btn-second:focus{
+  color: #409EFF;
+  border-color: #c6e2ff;
+  background-color: #ecf5ff
+}
+
+/*红色按钮鼠标移上去样式*/
+.el-button--danger:hover {
+    color: #fff;
+    background-color: #ce3333;
+    border-color: #e94848;
+}
+
+
+
+/*返回按钮鼠标移上去样式*/
+.btn-back:hover{
+    color: #333;
+    background-color: #ebebeb;
+    border-color: #dddddd;
+}
+
+/** 表格表头样式*/
+.el-table thead tr th {
+    background-color: #fafafa;
+}
+
+.el-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.el-table__body-wrapper tr td {
+    padding: 8px 0;
+}
+
+.el-table thead tr th.is-leaf{
+    padding: 8px 0;
+}
+
+.el-table thead tr th.is-leaf.is-sortable{
+    padding: 9px 0 7px 0;
+}
+
+.el-table.no_line th,
+.el-table.no_line tr td{
+	border: none;
+}
+
+
+.no_line{
+	border-left: none;
+	border-right: none;
+	border-top:1px solid #ebebf5;
+}
+
+/* 无边框样式调整 */
+.no_line.el-table--border{
+
+}
+
+.no_line.el-table--border::after,.no_line.el-table--group::after,.no_line.el-table::before {
+	background-color:#fff;
+	/*border-bottom: 1px solid #ebeef5;*/
+	height: 0px;
+}
+
+.no_line .el-table__header-wrapper{
+  border-bottom:1px solid #ebeef5;
+}
+
+
+.no_line  .el-table__body tr:hover>td {
+	background-color: transparent;
+}
+/*----------*/
+
+/* 表格margin 12px;*/
+.table-body{
+	margin:15px;
+}
+
+/* add ruanyang 2019-02-26 面包屑样式调整 */
+.el-breadcrumb{
+	margin-left:15px;
+	padding-top:13px;
+}
+
+/*add ruanyang 2019-02-26  高级搜索 */
+.adv-search{
+	font-family: "Microsoft YaHei";
+	color: #004a86;
+	cursor:pointer;
+	position:relative;
+	left: 280px;
+	font-size:14px;
+}
+
+
+/**********************  css样式  common.css  ***********************************/
+/** 表单类对齐 **/
+.ele-panel{
+	height:50px;
+	margin-left:7px;
+	padding-top: 5px;
+	font-size: 15px;
+	border-top: solid #ebeef5 1px;
+}
+
+/**下拉框通用样式调整**/
+.select-small{
+	width:220px;
+}
+
+/* ruanyang 2019-03-21 下拉框多选样式*/
+.mul-select.el-select .el-input--small .el-input__inner{
+  height:30px !important;
+}
+
+/** 级联下拉框通用样式调整 **/
+.cascader-small{
+	width:220px;
+}
+
+/** 文本框样式 **/
+.input-small{
+	width:220px;
+}
+
+/** 消息操作后的提示  覆盖element的样式 top:20px **/
+.el-message{
+	top:50%;
+}
+
+/** 折叠板属性增加	 **/
+.el-collapse-item__wrap{
+	border-top: 1px solid #ebeef5;
+}
+
+
+/**数字框 添加删除操作在右侧的调整**/
+.input-number-small-right {
+	width:220px;
+}
+
+/**使用label保证行内元素对齐  块级元素 **/
+.label-form{
+	display:inline-block;
+	width:100px;
+	text-align:right;
+	float:right;
+	font-size:14px;
+	margin-top:4px;
+}
+
+
+/**  el-row  每行的间距 **/
+.row{
+	padding-right:200px;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+/** 详情页的操作按钮等  默认居中 **/
+.row-foot{
+	margin-top:50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/** 一般的按钮组 **/
+.btn-group{
+	margin-top:5px;
+	margin-bottom: 5px;
+	margin-left:5px;
+}
+
+/** 折叠板样式调整  begin **/
+.ele-collapse{
+	margin-left:5px;
+}
+
+.ele-collapse-temp{
+	background-color: #F1F1F1;
+}
+
+.ele-collapse-temp-span{
+	margin-left: -5px;
+	width:5px;
+	background-color: #004a86;
+	height:50px;
+}
+
+/* 对话框样式调整 根据左侧菜单栏发生变化 */
+.dialog-shrink .el-dialog{
+  margin-left:28%;
+}
+
+.dialog-open .el-dialog{
+  margin-left:23%;
+}
+
+
+/** 查询条件排版 begin **/
+
+.row-search{
+	margin-top:15px;
+}
+
+.label-search{
+	display:inline-block;
+	/*width:100px;*/
+	width:80px;
+	text-align:right;
+	float:right;
+	margin-top:2px;
+	font-size:14px;
+}
+
+.input-number-right{
+	width:80%;
+}
+
+/** 确定的样式 **/
+.btn_confirm{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 74, 134);
+}
+
+/**添加样式**/
+.btn-add{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 74, 134);
+}
+
+.btn-common {
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 74, 134);
+}
+/* 按钮默认样式 */
+.btn-default{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 74, 134);
+}
+
+/*面包屑样式*/
+.brand{
+	height:40px;
+	position:relative;
+	background-color:#E5E9EC;
+}
+
+.common-brand .el-breadcrumb__item:last-child .el-breadcrumb__inner{
+	font-weight: bold;
+}
+.brand-icon .el-badge__content{
+	right: 4px;
+	width: 22px;
+}
+
+
+.container{
+	background-color: #FFFFFF;
+	/*border-bottom: 1px solid #ddd;*/
+	margin-left:15px;
+	margin-right:15px;
+
+}
+
+.search{
+	margin-top:15px;
+}
+
+.search-collapse{
+	background-color:#F1F1F1;
+	height:0px;
+}
+
+.search-collapse-content{
+	/*margin-left:5px;*/
+}
+.search-collapse-title{
+	background-color: #F1F1F1;
+}
+
+.vertical-bar{
+	/*margin-left: -5px;*/
+	width:5px;
+	background-color: #004a86;
+	height:50px;
+}
+
+.title-font{
+	font-family: "Microsoft YaHei";
+	color: #004a86;
+	cursor:pointer;
+	position:relative;
+	left: 280px;
+	font-size:14px;
+}
+
+.collapse-content{
+	margin-left: 15px;
+	font-weight: bold;
+}
+
+.collapse-content > font{
+	color: red;
+}
+
+.search .search-collapse .search-box{
+	width:220px;
+	height:32px;
+	position:relative;
+	left:10px;
+	top:10px;
+}
+.search-box > input {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.search-btn > .el-icon-search{
+	position: relative;
+	top: -1px;
+}
+
+.search-btn{
+	position:relative;
+	height:30px;
+	left:5px;
+	top:12px;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.btn-group-search{
+	/*margin-top:15px;*/
+	/*margin-left:2px;*/
+	border-top: 1px solid #ddd;
+	padding-top: 15px;
+}
+
+.btn-group-search-shrink{
+	margin-left: 13px;
+}
+
+.table-default a{
+	color:#005894;
+	text-decoration: none;
+}
+
+.table-default a:hover{
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+/*  搜索框中的 调整时间框长度以及高度 */
+.timeform{
+	height:32px;
+	width:220px !important;
+}
+/*左侧菜单栏 样式   颜色变化*/
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+	width: 200px;
+	min-height: 400px;
+	background-color:#004978;
+    padding-bottom:33px;
+}
+.el-header {
+	background-color: #B3C0D1;
+	color: #333;
+}
+
+.nav-icon{
+	height:30px;
+	font-size:22px;
+	text-align: center;
+	color:#FFFFFF;
+	background-color:#1A6190;
+}
+
+.nav-icon > img {
+	margin-bottom:2px;
+	position: relative;
+}
+
+.nav-background{
+	background-color: #004a86;
+}
+.nav .logo{
+	position: relative;
+	top: 7px;
+	/*margin-left: 15px;*/
+}
+.nav .logo-text{
+	font-size: 18px;
+	color:#FFF;
+	top: -3px;
+	position: relative;
+}
+
+.nav font{
+	font-size:14px;
+	color:#FFF;
+	position:relative;
+	/*top:12px; 加了全局样式 font-size 和 font-family 影响 */
+	top: 14px;
+}
+/* 调整边框颜色 */
+.el-color-picker-border > .el-color-picker__trigger{
+	border:0px;
+	margin-top:-3px;
+	margin-right:12px;
+	/* 默认 1px solid #e6e6e6 */
+}
+/* 图标颜色为白色 */
+.anticon{
+	color:white ;
+	margin-right:20px;
+}
+.asideWidth{
+	width:200px !important;
+}
+.elContainer1{
+	margin-left:200px;
+}
+.elContainer2{
+	margin-left:65px;
+}
+
+/* 鼠标滑动样式 中英文 和 皮肤 */
+.top-hover-change:hover .top-hover-change-sub{
+	color: #004a86 !important;
+	background: #fff;
+}
+.top-hover-change:hover{
+	color: #004a86 !important;
+	background: #fff;
+}
+
+/* 删除图标 样式变红 */
+.el-icon-delete{
+	color: #e94848;
+}
+
+/* 编辑图标 样式变化*/
+.el-icon-edit{
+	color: #004A86;
+}
+
+/* 查看图标变绿 */
+.el-icon-view {
+	color: #8fc31f;
+}
+
+/* 表格下方div 样式 */
+.table-bottom{
+	margin:0 0 15px 0;
+  padding-bottom:15px;
+	/*top: -15px;*/
+	position:relative;
+}
+
+.table-bottom > .el-pagination{
+	margin-right: 12px;
+}
+
+/* 表格下方的按钮组 */
+.table-bottom-btn-group{
+	float:left;
+	margin-left: 36px;
+}
+
+/* 按钮组按钮样式调整 */
+.table-bottom-btn-group > .btn1{
+	position:relative;
+	margin-left:29px;
+}
+
+.table-bottom-btn-group > .btn2{
+	margin-left:2px;
+}
+
+.table-bottom-btn-group > .btn3{
+	margin:0;
+}
+
+/* 头部名称样式*/
+.top-name{
+	font-size: 14px;
+	top: 13px;
+}
+
+/* 换肤样式 */
+.skin{
+	float:right;
+	margin-top:12px;
+	margin-right:12px;
+}
+
+
+/* 语言切换样式 */
+.language-switch{
+	float:right;
+	margin-top:12px;
+	margin-right:12px;
+	cursor:default;
+}
+
+.language-switch-content{
+	padding: 3px;
+	width: 17px;
+	height: 17px;
+	color: #FFF;
+	display:inline-block;
+	border-radius: 50%;
+	font-size: 12px;
+	border: 1px solid #fff;
+}
+
+.language-content{
+	width: 23px;
+	height: 23px;
+	display: inline-block;
+	font-size: 12px;
+	position: relative;
+}
+.language-content-ch{
+	right: 1px;
+}
+
+
+/* 左侧菜单样式 */
+.left-menu{
+	position: absolute;
+	background-color: #004978;
+	height:100%;
+	margin-top:50px;
+}
+
+/* form 样式 */
+.div-form{
+	margin-top:15px;
+}
+/* form中文本框样式调整 */
+.form-input{
+	width: 75%;
+}
+/* form表单 文本域调整 */
+.form-input.el-textarea{
+	width:89%;
+}
+
+/*form 表单的按钮组*/
+.form-btn-group{
+	margin-bottom:10px;
+	border-top:1px solid #ddd;
+	padding-top:15px;
+  padding-bottom:10px;
+}
+
+/* 左侧菜单标记样式调整 */
+.menu-badge{
+
+}
+
+/* 左侧菜单栏 标记位置调整 */
+.menu-badge > .el-badge__content{
+/*	position: absolute;*/
+	margin-top: -3px;
+	margin-left: 15px;
+	width:22px;
+}
+
+/*  左侧菜单栏 文本过长请用省略号代替 */
+.menu-font-span2{
+	margin-left: 28px;
+	display:inline-block;
+	width:70px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/*左侧 二级菜单折叠样式*/
+.sub-menu2 > div{
+	background-color:#052b54;
+}
+/*左侧 二级菜单折叠 hover 背景颜色变化*/
+/*.sub-menu2 > div:hover{
+	background-color:#00aae8;
+}*/
+.sub-menu2 >.el-menu--vertical{
+  background-color:transparent;
+}
+
+.el-menu--vertical >.el-menu>.sub-menu2 > div:first-child{
+	background-color:#004a86;
+}
+
+.el-menu-item.sub-menu2-content{
+	background-color:#102541;
+}
+
+
+
+/* 三级菜单 字体 */
+.menu-font-span3{
+	display: inline-block;
+	width: 70px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.menu-font-span3-pre{
+	position:relative;
+	font-size:30px;
+	margin: 0 3px 0 10px;
+	bottom: 10px;
+}
+
+/*.menu-font-over2:hover::after{
+	content:'待办任务1111111111111';
+	position: relative;
+	left:80px;
+	margin-left: 50px;
+	height:30px;
+}*/
+
+/* 一级菜单 字体*/
+.menu-font-span1{
+	display:inline-block;
+	width:70px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	padding-bottom: 3px;
+}
+
+/*左侧菜单1级样式图标*/
+.menu-icon1{
+	color:#fff !important;
+}
+
+
+/* 设置全局字体 */
+body{
+	font-size: 14px;
+	font-family: 'Microsoft YaHei';
+}
+
+
+/* app.vue 中的样式*/
+#app{
+	margin: 0;
+	padding: 0;
+	background-color:#F1F1F1;
+}
+body{
+	margin:0;
+	padding:0;
+}
+html,body,#app{
+	height: 100%;
+}
+
+h3{
+	margin-top:70px;
+	position: relative;
+}
+
+.container-hr{
+	height:2px;
+	border:none;
+	border-top:2px dotted #185598;
+}
+
+.container-div{
+	/*border:1px solid #ebebeb;*/
+	padding:6px;
+
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(235, 235, 235);
+	border-image: initial;
+	border-radius: 3px;
+	transition: all 0.2s ease 0s;
+
+}
+
+.el-container-cuc{
+	background-color: #FFFFFF;
+	padding-left: 5px;;
+
+}
+
+.el-main{
+	background-color:#f1f1f1;
+}
+/* p标签样式调整*/
+p {
+	font-size: 14px;
+	color: rgb(94, 109, 130);
+	line-height: 1.5em;
+	margin-top:-2px;
+	margin-left:1px;
+	position: relative;
+}
+
+/* 主从表样式调整 */
+
+/*下划线*/
+.under-line{
+  height:15px;
+  background-color:#F1F1F1;
+}
+
+/*tab页最下面的表格样式*/
+.tab-bottom-table{
+  margin-top:30px;
+  padding-top:15px;
+}
+
+/* 从表操作页面 15px */
+.slave-container{
+  margin:15px;
+}
+
