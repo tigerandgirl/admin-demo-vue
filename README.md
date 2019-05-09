@@ -13,7 +13,7 @@
 ## src 要开发的目录
 # assets: 放置一些图片，如logo等。
 # components: 目录里面放了一个组件文件，可以不用。
-# App.vue: 项目入口文件，我们也可以直接将组件写这里，而不使用 components 目录。
+# App.vue: 项目入口文件。
 # main.js: 项目的核心文件。
 #static 静态资源目录 ，如图片、字体等
 #test 初始的测试目录 可以删除
